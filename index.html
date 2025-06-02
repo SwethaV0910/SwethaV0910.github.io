@@ -116,64 +116,70 @@
     <p>I am a passionate Electronics and Instrumentation Engineering student at SASTRA University with interests in automation, embedded systems, and control engineering. I have hands-on experience in MATLAB, Simulink, LabVIEW, and embedded controllers like Arduino and ATmega. I thrive in multidisciplinary teams and aim to contribute to innovative solutions that solve real-world problems.</p>
   </section>
 
-<section id="projects">
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3><a href="#tomato" style="text-decoration:none; color:#004080">Tomato Ripeness Detection using Fuzzy Logic</a></h3>
+    </div>
+    <section id="projects">
   <h2>Projects</h2>
   <div class="project">
-    <h3><a href="#tomato" class="project-link">Tomato Ripeness Detection using Fuzzy Logic</a></h3>
+    <h3>Tomato Ripeness Detection using Fuzzy Logic</h3>
+    <button onclick="toggleVisibility('tomato-img')">View Image</button>
+    <img id="tomato-img" src="images/tomato_detection.png" alt="Tomato Ripeness Detection" style="display:none; width:100%; max-width:600px; border-radius:10px; margin: 10px 0;">
+    <p>This project uses MATLAB and image processing with fuzzy inference systems to classify tomatoes based on ripeness levels (ripe, unripe, undeveloped). It employs HSV transformation, Gaussian membership functions, and wavelet edge detection to achieve improved accuracy.</p>
   </div>
   <div class="project">
-    <h3><a href="#eeg" class="project-link">EEG Hardware Development</a></h3>
+    <h3>EEG Hardware Development</h3>
+    <button onclick="toggleVisibility('eeg-img')">View Image</button>
+    <img id="eeg-img" src="images/eeg_project.webp" alt="EEG Hardware Project" style="display:none; width:100%; max-width:600px; border-radius:10px; margin: 10px 0;">
+    <p>Designed an EEG circuit to capture and process brainwave signals. Signal filtering was implemented for noise reduction, and Tracer DAQ was used to visualize data. This project explores potential use in neurofeedback and biomedical applications.</p>
   </div>
   <div class="project">
-    <h3><a href="#dc_motor" class="project-link">DC Motor Speed & Position Control</a></h3>
+    <h3>DC Motor Speed & Position Control</h3>
+    <button onclick="toggleVisibility('dc-img')">View Image</button>
+    <img id="dc-img" src="images/dc_motor_control.png" alt="DC Motor Control" style="display:none; width:100%; max-width:600px; border-radius:10px; margin: 10px 0;">
+    <p>Created a MATLAB Simulink model implementing a PID controller for speed and position control of a DC motor. Performance was analyzed under varying conditions and optimized for system response.</p>
   </div>
   <div class="project">
-    <h3><a href="#vibration" class="project-link">Vibration Monitoring System using MEMS</a></h3>
+    <h3>Vibration Monitoring System using MEMS</h3>
+    <button onclick="toggleVisibility('vib-img')">View Image</button>
+    <img id="vib-img" src="images/vibration_sensor.png" alt="Vibration Monitoring System" style="display:none; width:100%; max-width:600px; border-radius:10px; margin: 10px 0;">
+    <p>Interfaced an ADXL345 MEMS accelerometer with an ATmega microcontroller to capture real-time vibration data for equipment monitoring. This system helps in early fault detection in rotating machinery.</p>
   </div>
 </section>
 
-<section id="tomato">
-  <h2>Tomato Ripeness Detection using Fuzzy Logic</h2>
-  <img src="tomato_detection.png" alt="Tomato Ripeness Detection" style="width:100%; max-width:600px; border-radius:10px;" loading="lazy">
-  <p>This project uses MATLAB and image processing with fuzzy inference systems to classify tomatoes based on ripeness levels (ripe, unripe, undeveloped). It employs HSV transformation, Gaussian membership functions, and wavelet edge detection to achieve improved accuracy.</p>
-  <p><strong>Technologies:</strong> MATLAB, Fuzzy Logic, Image Processing, HSV, Gaussian Membership, Wavelet</p>
-  <p><a href="#projects">🔝 Back to Projects</a></p>
-</section>
+<script>
+  function toggleVisibility(id) {
+    const img = document.getElementById(id);
+    img.style.display = img.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
 
-<section id="eeg">
-  <h2>EEG Hardware Development</h2>
-  <img src="eeg_project.webp" alt="EEG Hardware Project" style="width:100%; max-width:600px; border-radius:10px;" loading="lazy">
-  <p>Designed an EEG circuit to capture and process brainwave signals. Signal filtering was implemented for noise reduction, and Tracer DAQ was used to visualize data. This project explores potential use in neurofeedback and biomedical applications.</p>
-  <p><strong>Technologies:</strong> Analog Circuits, EEG, Signal Filtering, Tracer DAQ</p>
-  <p><a href="#projects">🔝 Back to Projects</a></p>
-</section>
-
-<section id="dc_motor">
-  <h2>DC Motor Speed & Position Control</h2>
-  <img src="dc_motor_control.png" alt="DC Motor Control" style="width:100%; max-width:600px; border-radius:10px;" loading="lazy">
-  <p>Created a MATLAB Simulink model implementing a PID controller for speed and position control of a DC motor. Performance was analyzed under varying conditions and optimized for system response.</p>
-  <p><strong>Technologies:</strong> MATLAB, Simulink, PID Control, Motor Control Systems</p>
-  <p><a href="#projects">🔝 Back to Projects</a></p>
-</section>
-
-<section id="vibration">
-  <h2>Vibration Monitoring System using MEMS</h2>
-  <img src="vibration_sensor.png" alt="Vibration Monitoring System" style="width:100%; max-width:600px; border-radius:10px;" loading="lazy">
-  <p>Interfaced an ADXL345 MEMS accelerometer with an ATmega microcontroller to capture real-time vibration data for equipment monitoring. This system helps in early fault detection in rotating machinery.</p>
-  <p><strong>Technologies:</strong> ADXL345, ATmega, MEMS, Embedded Systems, Vibration Monitoring</p>
-  <p><a href="#projects">🔝 Back to Projects</a></p>
-</section>
-
-  
-<section id="certifications">
-  <h2>Certifications</h2>
-  <div class="certification">
-    <p>✅ <a href="embedded_sensing.pdf" target="_blank" rel="noopener noreferrer">Embedded Sensing, Actuation & Interfacing Systems – NPTEL</a></p>
-    <p>✅ MATLAB & Simulink for Control Systems <em>(certificate pending)</em></p>
-    <p>✅ Industrial Automation & PLC Programming <em>(certificate pending)</em></p>
-    <p>✅ <a href="kicad_workshop.pdf" target="_blank" rel="noopener noreferrer">KiCad Workshop – PCB Design</a></p>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="experience">
+    <h3>Intern – TESPA Robotics and Automation Solutions (May - June 2024)</h3>
+    <img src="images/tespa.jpeg" alt="TESPA Robotics Internship" style="width:100%; max-width:200px; border-radius:10px; margin: 10px 0;">
+    <p>Worked on robotic systems and PLC-based automation solutions. Contributed to the optimization of control algorithms using MATLAB and Python. Participated in testing and development phases alongside senior engineers.</p>
+  </div>
+  <div class="experience">
+    <h3>Inplant Training – Brakes India Pvt Ltd (December 2024)</h3>
+    <img src="images/brakes-india-.avif" alt="Brakes India Inplant Training" style="width:100%; max-width:200px; border-radius:10px; margin: 10px 0;">
+    <p>Observed real-time manufacturing processes in braking systems. Learned PLC basics including automation logic and debugging. Gained insight into industrial control systems and maintenance protocols.</p>
   </div>
 </section>
+
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certification">
+      <p>✅ <a href="certificates/embedded_sensing.pdf" target="_blank">Embedded Sensing, Actuation & Interfacing Systems – NPTEL</a></p>
+      <p>✅ MATLAB & Simulink for Control Systems <em>(certificate pending)</em></p>
+         ✅ <a href="certificates/CompoHunt.pdf" target="_blank">CompoHunt intra School Competition(SEEE)</a></p>
+      <p>✅ <a href="certificates/kicad_workshop.pdf" target="_blank">KiCad Workshop – PCB Design</a></p>
+    </div>
+  </section>
 
   <section id="skills">
     <h2>Skills</h2>
